@@ -12,3 +12,8 @@ def mensaje():
 
 print(mensaje())
 print("Pipeline ejecutado automáticamente")
+
+
+with open("resultado.txt", "w") as archivo:
+    archivo.write("Proceso ejecutado correctamente\n")
+    archivo.write(f"Ambiente: {env}\n")

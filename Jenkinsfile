@@ -25,6 +25,12 @@ pipeline {
                 bat '"C:\\Users\\mauri\\AppData\\Local\\Programs\\Python\\Python313\\python.exe" hello.py'
             }
         }
+
+        stage('Archive Artifact') {
+            steps {
+                archiveArtifacts artifacts: 'resultado.txt', fingerprint: true
+            }
+        }
     }
 
     post {
