@@ -2,4 +2,4 @@ from hello import mensaje
 
 
 def test_mensaje():
-    assert mensaje() == "Hola desde Jenkins Patt"
+    assert mensaje() == "Hola desde Jenkins - Pipeline automatizado"
