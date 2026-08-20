@@ -22,3 +22,14 @@ pipeline {
         }
     }
 }
+
+    post {
+        success {
+            echo 'Pipeline ejecutado correctamente'
+        }
+
+        failure {
+            echo 'Pipeline falló. Revisar las pruebas.'
+        }
+    }
+}
