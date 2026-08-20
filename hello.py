@@ -1,6 +1,6 @@
 def mensaje():
-    return "Hola desde Jenkins Patt"
+    return "Hola desde Jenkins - Pipeline automatizado"
 
 
 print(mensaje())
-print("Mi primer pipeline está funcionando")
+print("Pipeline ejecutado automáticamente")
