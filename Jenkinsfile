@@ -1,5 +1,9 @@
 pipeline {
     agent any
+    
+    environment {
+        DEMO_TOKEN = credentials('demo-token')
+    }
 
     stages {
         stage('Install Dependencies') {
