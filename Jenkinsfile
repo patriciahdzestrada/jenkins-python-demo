@@ -1,8 +1,9 @@
 pipeline {
     agent any
-    
+
     environment {
         DEMO_TOKEN = credentials('demo-token')
+        APP_ENV = 'dev'
     }
 
     stages {
